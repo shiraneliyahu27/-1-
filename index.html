@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>תומר שיפוצים ואינסטלציה – הבית שלך בידיים טובות</title>
+
+  <style>
+    body{
+      font-family: Arial, sans-serif;
+      margin:0;
+      padding:0;
+      background:#fafafa;            /* רקע בהיר */
+      color:#3b3b3b;
+      line-height:1.6;
+    }
+
+    header{
+      background: linear-gradient(90deg, #ffffff, #f6f1e7);
+      text-align:center;
+      padding:55px 20px;
+      border-bottom:2px solid #e6dcc5;
+    }
+    header h1{
+      margin:0;
+      font-size:2.6rem;
+      color:#6b4f2a;
+    }
+    header p{
+      margin-top:10px;
+      font-size:1.3rem;
+      color:#8a6a3b;
+    }
+
+    nav{
+      background:#ffffff;
+      padding:14px;
+      text-align:center;
+      border-bottom:1px solid #e6dcc5;
+    }
+    nav a{
+      color:#7a7a7a;
+      margin:0 18px;
+      text-decoration:none;
+      font-weight:bold;
+      font-size:1.05rem;
+    }
+    nav a:hover{
+      color:#bfa76a;
+    }
+
+    section{
+      padding:65px 20px;
+      max-width:1100px;
+      margin:auto;
+    }
+
+    h2{
+      text-align:center;
+      margin-bottom:40px;
+      font-size:2rem;
+      color:#bfa76a;
+    }
+
+    .service-list{
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+      gap:24px;
+    }
+    .service-item{
+      background:#ffffff;
+      padding:30px;
+      border-radius:16px;
+      text-align:center;
+      color:#3b3b3b;
+      border:1px solid #ece6d8;
+      box-shadow:0 6px 18px rgba(0,0,0,0.06);
+      transition:transform 0.2s;
+    }
+    .service-item:hover{
+      transform:translateY(-4px);
+    }
+
+    .gallery-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(260px,1fr));
+      gap:22px;
+    }
+    .gallery-grid img{
+      width:100%;
+      border-radius:16px;
+      box-shadow:0 6px 18px rgba(0,0,0,0.12);
+      border:3px solid #ffffff;
+    }
+
+    .contact form{
+      max-width:520px;
+      margin:auto;
+      display:flex;
+      flex-direction:column;
+      gap:18px;
+    }
+    .contact input,
+    .contact textarea{
+      padding:15px;
+      border-radius:10px;
+      border:1px solid #d6d1c4;
+      font-size:1rem;
+      background:#ffffff;
+      color:#3b3b3b;
+    }
+    .contact button{
+      background: linear-gradient(135deg, #f1e3a1, #d4af37);
+      color:#3b3b3b;
+      padding:16px;
+      border:none;
+      border-radius:12px;
+      cursor:pointer;
+      font-size:1.15rem;
+      font-weight:bold;
+    }
+
+    footer{
+      background:#ffffff;
+      text-align:center;
+      padding:35px 20px;
+      border-top:2px solid #e6dcc5;
+      color:#7a7a7a;
+    }
+    footer a{
+      color:#bfa76a;
+      text-decoration:none;
+      font-weight:bold;
+      margin:0 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>תומר שיפוצים ואינסטלציה</h1>
+  <p>הבית שלך בידיים טובות</p>
+</header>
+
+<nav>
+  <a href="#services">שירותים</a>
+  <a href="#gallery">גלריה</a>
+  <a href="#contact">צור קשר</a>
+</nav>
+
+<section id="services">
+  <h2>השירותים שלנו</h2>
+  <div class="service-list">
+    <div class="service-item">שיפוצים כלליים</div>
+    <div class="service-item">עבודות צבע</div>
+    <div class="service-item">עבודות גבס</div>
+    <div class="service-item">ריצוף וחיפוי</div>
+    <div class="service-item">שדרוג מטבחים וחדרי רחצה</div>
+    <div class="service-item">אינסטלציה ואיתור נזילות</div>
+  </div>
+</section>
+
+<section id="gallery">
+  <h2>גלריית עבודות</h2>
+  <div class="gallery-grid">
+    <img src="images/work1.jpg" alt="שיפוץ לפני ואחרי">
+    <img src="images/work2.jpg" alt="עבודת אינסטלציה">
+    <img src="images/work3.jpg" alt="שיפוץ חדר רחצה">
+    <img src="images/work4.jpg" alt="עבודת גמר">
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>צור קשר</h2>
+  <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+    <input type="text" name="name" placeholder="שם מלא" required>
+    <input type="tel" name="phone" placeholder="טלפון" required>
+    <input type="email" name="email" placeholder="אימייל">
+    <textarea name="message" rows="5" placeholder="איך נוכל לעזור לך?"></textarea>
+    <button type="submit">שלח</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2025 תומר שיפוצים ואינסטלציה | כל הזכויות שמורות</p>
+  <p>
+    <a href="tel:+972559400353">📞 055-940-0353</a> |
+    <a href="https://wa.me/972559400353" target="_blank">💬 וואטסאפ</a>
+  </p>
+</footer>
+
+</body>
+</html>
